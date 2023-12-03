@@ -2,18 +2,31 @@
 Unit Converter--Solo project built for Scrimba. github.com/wlangley7870
 */
 
-* {
+
+body {
+
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     
+
 }
 
 #frame {
-
     
     display: flex;
     flex-direction: column;
     max-width: 550px;
-
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
 }
+
+
+    
 
 /* */
 #topGUI {
@@ -25,6 +38,8 @@ Unit Converter--Solo project built for Scrimba. github.com/wlangley7870
     gap: 20px;
     color: #fff;
     padding: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
     
 }
@@ -53,6 +68,7 @@ Unit Converter--Solo project built for Scrimba. github.com/wlangley7870
     text-align: center;
 }
 
+
 #convert-btn{
 
     width: 117px;
@@ -74,6 +90,9 @@ Unit Converter--Solo project built for Scrimba. github.com/wlangley7870
     justify-content: center;
     align-items: center;
     padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
 
 }
 

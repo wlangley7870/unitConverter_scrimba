@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
         <title> [Unit Converter] </title>
+        <style>
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+               -webkit-appearance: none;
+            }
+         </style>
     </head>
 
     <body>
@@ -15,9 +21,10 @@
             <div id="topGUI">
                 <p id="header1">Metric/Imperial Unit Conversion</p>
 
-                <input id="fancy-input"></input>
+                <input id="fancy-input" type="number" ></input>
 
                 <button id="convert-btn">Convert</button>
+                
             </div>
          
             <div id="dataContainer">
@@ -26,25 +33,25 @@
 
                     <p id="gridHead">Length (Meter/Feet)</p>
 
-                    <p class="cardText" id="length-el">[dummy text]</p>
+                    <p class="cardText" id="length-el"></p>
 
                 </div>
                     
 
                 <div class="gridBase" id="gridVolume"> 
 
-                    <p id="gridHead">Length (Meter/Feet)</p>
+                    <p id="gridHead">Volume (Liters/Gallons)</p>
 
-                    <p class="cardText" id="volume-el">[dummy text]</p>
+                    <p class="cardText" id="volume-el"></p>
                     
                 </div>
 
 
                 <div class="gridBase" id="gridMass">
                      
-                    <p id="gridHead">Length (Meter/Feet)</p>
+                    <p id="gridHead">Mass (Kilograms/Pounds)</p>
 
-                    <p class="cardText" id="mass-el">[dummy text]</p>
+                    <p class="cardText" id="mass-el"></p>
 
                 </div>
 
