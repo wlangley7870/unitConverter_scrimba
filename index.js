@@ -8,7 +8,7 @@ let inputEl = document.getElementById("fancy-input");
 const convertBtn = document.getElementById("convert-btn");
 
 //purely for code readability
-let inp = "";
+let inp;
 
 //outs
 //DOM
@@ -18,13 +18,12 @@ const massEl = document.getElementById("mass-el");
 //text switches
 let ooEE = "ee";
 let s = "s";
+let s2 = "s";
 
 //backend
-let lengthOut = "";
-let volumeOut = "";
-let massOut = "";
-
-
+let lengthOut;
+let volumeOut;
+let massOut ;
 
 //base
 const meterUOM = 3.281//feet
@@ -68,6 +67,7 @@ function renderCalc() {
     if(Number(inp)===1) {
         ooEE = "oo"
         s = ""
+        s2 ="s"
     } else {
         ooEE = "ee"
         s = "s"
@@ -75,9 +75,9 @@ function renderCalc() {
 
     if(inp) {
     //render all cards e.g| "X meters = [calc] feet | X feet = [calc] meters"
-    lengthOut = `${inp} meter${s} = ${calc('mTf')} feet | ${inp} f${ooEE}t = ${calc("fTm")} meter${s}`
-    volumeOut = ` ${inp} liter${s} = ${calc("lTg")} gallon${s} | ${inp} gallon${s} = ${calc("gTl")} liter${s}`
-    massOut = `${inp} kilo${s} = ${calc("kTp")} pound${s} | ${inp} pound${s} = ${calc("pTk")} kilo${s}`
+    lengthOut = `${inp} meter${s} = ${calc('mTf')} feet | ${inp} f${ooEE}t = ${calc("fTm")} meter${s2}`
+    volumeOut = ` ${inp} liter${s} = ${calc("lTg")} gallon${s2} | ${inp} gallon${s} = ${calc("gTl")} liter${s2}`
+    massOut = `${inp} kilo${s} = ${calc("kTp")} pound${s2} | ${inp} pound${s} = ${calc("pTk")} kilo${s2}`
     }
     
     updateDOM();
